@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Saved Notes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      width: 400px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #notesContainer {
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 14px;
+      color: #333;
+      margin: 0 0 10px;
+      font-weight: normal;
+    }
+    a {
+      font-size: 14px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      background: #f9f9f9;
+      margin: 5px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .delete-button {
+      background: #e74c3c;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+    .delete-button:hover {
+      background: #c0392b;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <h1>Saved Notes</h1>
+  <div>
+    <button id="clearNotes">Clear All Notes</button>
+    <button id="exportNotes">Export Notes</button>
+  </div>
+  <div id="notesContainer"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
